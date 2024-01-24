@@ -33,7 +33,7 @@ void main(){
         else if(option==0){
             for(i=0; i<MAX_SIZE; i++){
                 if(arr[i]!=-1)
-                    printf("\n%d : %d", i , arr[i]);
+                    printf("\n%d\t%d", i , arr[i]);
             }
             break;
         }
