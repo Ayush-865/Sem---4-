@@ -2,7 +2,7 @@
 #include<conio.h>
 #include <math.h>
 
-#define MAX_SIZE 1000
+#define MAX_SIZE 100000000
 
 int arr[MAX_SIZE];
 int arr1[MAX_SIZE];
@@ -18,11 +18,11 @@ void binarySearch(){
         counter++;
  
         // Check if x is present at mid
-        if (arr[m] == num)
+        if (m == num)
             break;
  
         // If x greater, ignore left half
-        if (arr[m] < num)
+        if (m < num)
             low = m + 1;
  
         // If x is smaller, ignore right half
