@@ -11,7 +11,7 @@ int mcm(vector<int> &arr, int n)
         {
             int j = i + d;
             int min = INT_MAX;
-            for (int k = 0; k < j; k++)
+            for (int k = i; k < j; k++)
             {
                 int ans = m[i][k] + m[k + 1][j] + arr[i - 1] * arr[k] * arr[j];
                 if (ans < min)
